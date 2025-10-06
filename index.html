@@ -27,6 +27,7 @@
         padding:10px;
         padding-bottom:0px;
         height:80px;
+        
         background-color: rgb(255, 254, 252);
         border-bottom: rgb(49, 41, 41);
         position: fixed;
@@ -46,9 +47,13 @@
       .img1{
         width:200px;
         height:70px;
+        
 
       
         
+      }
+      .headie{
+        padding-left:120px;
       }
       .menu{
         display:flex;
@@ -67,38 +72,40 @@
         gap: 240px;
         background-color: rgb(227, 230, 230);align-items: center;
         height:600px;
-        
-        
-        
-        
-       
-        
-        
-        
-        
+        padding-left:100px;
+        padding-right:100px;
 
-
-               
-
+    
       }
-      .image3{
-        position:relative;
-        display:inline-block;
-        
-        
-      }
+      
       .img3o{
-        position:absolute;
-        display:block;
-        top:90px;
+        top:30px;
         object-fit: contain;
         height:100%;
+        position: absolute;
+        right:70px;
+
+        
+        
+
         
 
       }
+      .img3{
+        display:flex;
+        flex-wrap: wrap;
+        padding-right:400px;
+        gap: 50px;
+      }
 
+      .img5{
+        width:100%;
+        height:600px;
+        object-fit: cover;
+      }
       .hero-text{
         margin-left: 30px;
+        width:600px;
       }
       .s1{
         padding:20px;
@@ -287,7 +294,7 @@
   <body>
     
     <header class="head1">
-      <img src="https://www.selstack.com/logo_dark.png" alt="logo" class="img1">
+      <div class="headie"><img src="https://www.selstack.com/logo_dark.png" alt="logo" class="img1"></div>
       <div class="menu">
         <p> How it works</p>
        <p> pricing</p>
@@ -300,20 +307,28 @@
     
     <div class="hero">
       <div class="hero-text">
-        <p class="hero1"> Small Stores.Big Control</p>
-        <p class="w1"> With Selstack, you sell, capture leads and keep customers coming back - all in one place.</p>
+        <p class="hero1"> Build. Sell. Grow.</p>
+        <p class="w1"> Selstack gives you everything you need to sell digital products and services online, beautifully, efficiently, and in total control.</p>
+        
+        <p class="w2">✓ 14-day free trial, no credit card required</p>
+        <p class="w2">✓ Trusted by over 20,000 Businesses</p>
+</p>
+        <p class="w2">✓ Send automated emails to leads</p>
+        <p class="w2">✓ Manage your leads using our In-built CRM</p>
         <button class="s1">
         Start Free
         </button>
         <button class="s2">
         contact sales
         </button>
+        <img src="/heroimage.png" class="img3o">
+        
+        
+        
+    </div>
 
       </div>
-      <div class="image3"> 
-        <img src="https://media.istockphoto.com/id/1412652081/photo/ethnic-small-business-owner-smiling-cheerfully-in-her-shop.jpg?s=612x612&w=0&k=20&c=ev3vJsM_dfjNRcv3HWVxuNFi5K7dtBXCtcXpVs7bXcA=" alt="image2">
-       <img src="/heroimage.png" class="img3o"></div>
-    </div>
+      
     <div>
       <p class="hiw1">How Selstack Works</p> 
     </div>
