@@ -1,0 +1,391 @@
+<!doctype html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>
+      Selstack
+    </title>
+    
+
+    </header>
+    <style>
+      
+      body{
+        margin:0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+      
+        
+      }
+      
+      .head1{
+        display:grid;
+        grid-template-columns: 1fr 1fr ;
+        gap:20px;
+        align-content: center;
+        width: 100%;
+        padding:10px;
+        padding-bottom:0px;
+        height:80px;
+        background-color: rgb(255, 254, 252);
+        border-bottom: rgb(49, 41, 41);
+        position: fixed;
+        
+        
+        z-index: 1000;
+        
+        
+        
+        
+        
+        
+
+        
+        
+       }
+      .img1{
+        width:200px;
+        height:70px;
+
+      
+        
+      }
+      .menu{
+        display:flex;
+        gap:60px;
+        margin-left:200px;
+        align-items: center;
+        margin-left:20px;
+        margin-right:20px;
+        font-size: 18px;
+      
+        
+      }
+      .hero{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 240px;
+        background-color: rgb(227, 230, 230);align-items: center;
+        height:600px;
+        
+        
+        
+        
+       
+        
+        
+        
+        
+
+
+               
+
+      }
+      .image3{
+        position:relative;
+        display:inline-block;
+        
+        
+      }
+      .img3o{
+        position:absolute;
+        display:block;
+        top:90px;
+        object-fit: contain;
+        height:100%;
+        
+
+      }
+
+      .hero-text{
+        margin-left: 30px;
+      }
+      .s1{
+        padding:20px;
+        background-color: rgb(10, 73, 10);
+        color:white;
+        border-radius:10px;
+
+      }
+      .s2{
+        padding:20px;
+        border-radius:10px;
+        border:none;
+        margin-left:10px;
+
+      }
+      .c1{
+        padding:20px;
+        border-radius:10px;
+        margin:auto;
+        background-color: rgb(10, 73, 10);
+        color:white;
+
+      }
+      .hero1{
+        font-size:50px;
+        font-weight: 800;
+      }
+      .hero-text{
+        margin-top: 60px;
+
+      }
+      .hiw1{
+        text-align: center;
+        padding-top: 20px;
+        font-weight: 700;
+        font-size:50px;
+      }
+      .hiw2{
+        display:flex;
+        flex-direction: row;
+        flex-wrap:wrap;
+        gap:40px;
+        padding-left:10px;
+        padding-right:10px;
+        justify-content: center;
+       
+        
+
+        
+        
+        
+      }
+      .hiw3{
+        border: solid;
+        padding: 10px;
+        text-align: center;
+        border-radius:10px;
+        align-content: center;
+        width:300px;
+        
+        
+        
+      }
+      .hiw4{
+        font-size:20px;
+        font-weight: 600;
+
+
+        
+      }
+      .callout{
+        text-align: center;
+        padding-top: 30px;
+        color: brown;
+        font-size:30px;
+        font-weight:800;
+
+      }
+      .nom1{
+        background-color: black;
+        color: white;
+        border-radius: 180px;
+        padding:4px;
+        width:30px;
+        height:30px;
+        align-content: center;
+        margin: auto;
+
+        
+        
+
+      }
+      .dif1{
+        display:flex;
+        flex-direction: row;   
+        flex-wrap: wrap;
+        gap:10px;
+        justify-content: center;
+        
+        
+
+      }
+      .difimg1{
+        width:400px;
+        height:400px;
+      }
+       .difimg2{
+        width:400px;
+        height:400px;
+        object-fit: cover;
+      }
+      .difp1{
+        font-size: 30px;
+        font-weight:700;
+      }
+      .difp2{
+        font-size: 30px;
+        font-weight:700;
+      }
+      .b1{
+        display:block;
+        margin: auto;
+        padding: 20px;
+        background-color:rgb(10, 73, 10);
+        color:white;
+        font-size:18px;
+
+      }
+      .de1{
+        margin-top:15px;
+        display:flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        background-color: rgb(27, 24, 18);
+        color: white;
+        justify-content: center;
+        align-items: center;
+        padding:40px;
+        
+        
+      }
+      .de22{
+        width:400px;
+        height:400px;
+      
+      }
+      .de23{
+        width:400px;
+      }
+
+      .de24{
+        font-size:40px;
+      }
+      .foot{
+        display:flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        background-color: rgb(10, 73, 10);
+        color: white;
+      }
+
+      .de25{
+        padding:15px;
+        cursor: pointer;
+        
+      }
+      .de25:hover{
+        padding:15px;
+        cursor: pointer;
+        background-color: rgb(19, 21, 138);
+        color: white;
+        transition: 0.8s;
+        
+      }
+     
+      .de26{
+        padding:15px;
+        cursor: pointer;
+      }
+      
+      
+    </style>
+
+
+  </head>
+  <body>
+    
+    <header class="head1">
+      <img src="https://www.selstack.com/logo_dark.png" alt="logo" class="img1">
+      <div class="menu">
+        <p> How it works</p>
+       <p> pricing</p>
+       <p> Contact Sales</p>
+       <p> Log in</p>
+       <button class="c1"> Signup</button>
+     </div>
+    </header>
+    
+    
+    <div class="hero">
+      <div class="hero-text">
+        <p class="hero1"> Small Stores.Big Control</p>
+        <p class="w1"> With Selstack, you sell, capture leads and keep customers coming back - all in one place.</p>
+        <button class="s1">
+        Start Free
+        </button>
+        <button class="s2">
+        contact sales
+        </button>
+
+      </div>
+      <div class="image3"> 
+        <img src="https://media.istockphoto.com/id/1412652081/photo/ethnic-small-business-owner-smiling-cheerfully-in-her-shop.jpg?s=612x612&w=0&k=20&c=ev3vJsM_dfjNRcv3HWVxuNFi5K7dtBXCtcXpVs7bXcA=" alt="image2">
+       <img src="/heroimage.png" class="img3o"></div>
+    </div>
+    <div>
+      <p class="hiw1">How Selstack Works</p> 
+    </div>
+    <div>
+    <div class="hiw2">
+      <div class="hiw3">
+        <p class="nom1">1</p>
+        <p class="hiw4">Create a free account</p>
+        <p>Sign up with just an email address and password</p>
+
+      </div>
+      <div class="hiw3">
+        <p class="nom1">2</p>
+        <p class="hiw4">Setup your Business page</p>
+        <p>Put your creativity to work by setting up a high converting Business profile page online</p>
+
+      </div>
+      <div class="hiw3">
+        <p class="nom1">3</p>
+        <p class="hiw4">Add your products and services</p>
+        <p>The fun part! Upload as many products and services as you like. Share the link to your store or product and start receiving payments</p>
+
+      </div>
+    </div>
+    <div>
+      <p class="callout">The Selstack Difference</p>
+    </div>
+    <div class="dif1">
+      <div>
+        <img class="difimg1"src="https://www.rapidformationsblog.co.uk/wp-content/uploads/2024/07/Shutterstock_2475484855-750x750.jpg" alt="business owner selling online">
+        <p class="difp1"> All tools you need to sell</p>
+
+      </div>
+       <div>
+        <img class="difimg2" src="https://media.istockphoto.com/id/1281476617/photo/mature-man-running-online-store.jpg?s=612x612&w=0&k=20&c=TnGnw59DaBgJrrswbUb_uf54UHpT6N9waOC4gQzJ2N8=" alt="business owner selling online 2">
+        <p class="difp2"> Sell across 100+ Countries</p>
+
+      </div>
+      
+    </div>
+    <button class="b1"> See all features in action</button>
+    <div class="de1">
+      <div>
+        <img class="de22"src="https://www.selstack.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Forganisation.dce92f6a.png&w=3840&q=75" alt="test">
+
+      </div>
+      <div class="de23">
+        <p class="de24">Intuitive email marketing campaigns for marketers</p>
+        <p>Build meaningful connections with easy-to-use email marketing tools that streamline everything from design to send.</p>
+        <button class="de25"> Learn more</button>
+        <button class="de26"> Signup now</button>
+      </div>
+
+    </div>
+    <footer class="foot">
+      <div>
+        <p>Customer care: hello@selstack.com</p>
+        <p></p>
+        <p></p>
+      </div>
+    </footer>
+    
+      
+    
+  
+  
+
+    
+   
+  
+
+    
+
+  </body>
+</html>
