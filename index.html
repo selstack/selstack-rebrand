@@ -93,7 +93,7 @@
     }
 
     .hero-title {
-      font-size: 48px;
+      font-size: 60px;
       font-weight: 800;
       margin-bottom: 20px;
     }
@@ -158,9 +158,23 @@
     .callout {
       text-align: center;
       color: brown;
-      font-size: 30px;
+      font-size: 42px;
       font-weight: 800;
       margin-top: 60px;
+    }
+    .callout1{
+      width:700px;
+    }
+    .callout2{
+      display:flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      background-color: rgb(255, 254, 251);
+      padding:40px;
+    }
+    .callout3{
+      width:500px;
+      margin: auto;
     }
 
     .features {
@@ -195,36 +209,56 @@
     /* === EMAIL MARKETING SECTION === */
     .email-section {
       display: flex;
+      flex-direction: row;
       flex-wrap: wrap;
       align-items: center;
       justify-content: center;
-      background-color: #1b1812;
+      background-color: #132b66;
       color: white;
       padding: 60px 10%;
       gap: 40px;
     }
 
     .email1{
-      width:400px;
+      width:500px;
+      display:flex;
     }
 
     .email-text {
-      max-width: 400px;
+      width: 400px;
+      
     }
 
     .email-text h2 {
       font-size: 36px;
       margin-bottom: 15px;
+      width:400px;
+    }
+
+    .et1{
+      font-size:60px;
+      line-height: 35px;
+      
+      
+
+    }
+
+    .e1{
+      margin-top:20px;
+      border:none;
+      border-radius: 0;
     }
 
     .email-buttons button {
       margin-right: 10px;
+      margin-top: 10px;
       padding: 12px 20px;
-      border-radius: 8px;
+      font-size:18px;
+      border-radius:8px;
     }
 
     .email-buttons .learn-more {
-      background-color: rgb(19, 21, 138);
+      background-color: #004bad
       color: #fff;
     }
 
@@ -242,6 +276,7 @@
     }
 
     /* === RESPONSIVE === */
+    
     @media (max-width: 768px) {
       header {
         flex-direction: column;
@@ -319,29 +354,51 @@
   </div>
 
   <!-- The Selstack Difference -->
-  <p class="callout">The Selstack Difference</p>
-  <div class="features">
-    <div>
-      <img src="https://www.rapidformationsblog.co.uk/wp-content/uploads/2024/07/Shutterstock_2475484855-750x750.jpg" alt="Entrepreneur selling online" />
-      <p>All tools you need to sell</p>
-    </div>
+  <p class="callout">Your Business, Simplified</p>
+  <div class="callout2">
+    <div class="callout1">
+      <img src="https://www-cms.pipedriveassets.com/cdn-cgi/image/quality=70,format=auto/https://www-cms.pipedriveassets.com/brand-half-page-illustrations/Automations-500.png" alt="sellpro">
 
-    <div>
-      <img src="https://media.istockphoto.com/id/1281476617/photo/mature-man-running-online-store.jpg?s=612x612&w=0&k=20&c=TnGnw59DaBgJrrswbUb_uf54UHpT6N9waOC4gQzJ2N8=" alt="Online business owner" />
-      <p>Sell across 100+ Countries</p>
+    </div>
+    <div class="callout3">
+      <h1>Sell Digital Products & Services</h1>
+      <p1>Courses, files, consultations, subscriptions — whatever you offer, Selstack helps you deliver it seamlessly.Courses, files, consultations, subscriptions — whatever you offer, Selstack helps you deliver it seamlessly.</p1>
     </div>
   </div>
+  <div class="callout2">
+    <div class="callout3">
+      <h1>Manage Customers & Leads</h1>
+      <p1>Keep track of every buyer and lead. Automate follow-ups and turn prospects into returning customers.Keep track of every buyer and lead. Automate follow-ups and turn prospects into returning customers.</p1>
+    </div>
+    <div class="callout1">
+      <img src="https://www-cms.pipedriveassets.com/brand-half-page-illustrations/Insights-400.svg" alt="sellpro">
+
+    </div>
+  </div>
+   <div class="callout2">
+    <div class="callout1">
+      <img src="https://www-cms.pipedriveassets.com/cdn-cgi/image/quality=70,format=auto/https://www-cms.pipedriveassets.com/brand-half-page-illustrations/Automations-500.png" alt="sellpro">
+
+    </div>
+    <div class="callout3">
+      <h1>Accept Payments with Ease</h1>
+      <p1>Get paid instantly through trusted providers like Paystack, Flutterwave, and more.Get paid instantly through trusted providers like Paystack, Flutterwave, and more.</p1>
+    </div>
+  </div>
+  
   <button class="btn-wide">See all features in action</button>
 
   <!-- Email Marketing Section -->
   <section class="email-section">
-    <img class="email1" src="https://www.selstack.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Forganisation.dce92f6a.png&w=3840&q=75" alt="Email marketing illustration" />
+    <div class="email1"><img src="https://www.selstack.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Forganisation.dce92f6a.png&w=3840&q=75" alt="Email marketing illustration">
+    </div>
+    
     <div class="email-text">
-      <h2>Intuitive Email Marketing for Marketers</h2>
+      <h2 class="et1">Say Hello To Automated Emails</h2>
       <p>Build meaningful connections with easy-to-use email marketing tools that streamline everything from design to send.</p>
       <div class="email-buttons">
-        <button class="learn-more">Learn More</button>
-        <button class="signup">Sign Up Now</button>
+        <button>Start your 14-day trial</button>
+        
       </div>
     </div>
   </section>
