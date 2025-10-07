@@ -1,407 +1,356 @@
-<!doctype html>
-<html>
-  <head>
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title>
-      Selstack
-    </title>
-    
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Selstack | Build. Sell. Grow.</title>
 
-    </header>
-    <style>
-      
-      body{
-        margin:0;
-        box-sizing: border-box;
-        font-family: Arial, Helvetica, sans-serif;
-      
-        
-      }
-      
-      .head1{
-        display:grid;
-        grid-template-columns: 1fr 1fr ;
-        gap:20px;
-        align-content: center;
-        width: 100%;
-        padding:10px;
-        height:80px;
-        border:solid;
-        border-bottom: 2px;
-        border-style: solid;
-        background-color: rgb(255, 254, 252);
-        border-color: rgb(103, 97, 97);
-        position: fixed;
-        
-        
-        z-index: 1000;
-        
-        
-        
-        
-        
-        
+  <style>
+    /* === RESET & BASE === */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
-        
-        
-       }
-      .img1{
-        width:200px;
-        height:70px;
-        
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      color: #222;
+      line-height: 1.6;
+      background-color: #fff;
+    }
 
-      
-        
-      }
-      .headie{
-        padding-left:120px;
-      }
-      .menu{
-        display:flex;
-        gap:60px;
-        margin-left:200px;
-        align-items: center;
-        margin-left:20px;
-        margin-right:20px;
-        font-size: 18px;
-      
-        
-      }
-      .hero{
-        display:grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 240px;
-        background-color: rgb(227, 230, 230);align-items: center;
-        height:600px;
-        padding-left:100px;
-        padding-right:100px;
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
 
-    
-      }
-      
-      .img3o{
-        top:30px;
-        object-fit: contain;
-        height:100%;
-        position: absolute;
-        right:70px;
+    img {
+      max-width: 100%;
+      display: block;
+    }
 
-        
-        
+    button {
+      cursor: pointer;
+      border: none;
+    }
 
-        
+    /* === HEADER === */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 40px;
+      background-color: #fffdfc;
+      border-bottom: 1px solid #676161;
+      position: fixed;
+      width: 100%;
+      z-index: 1000;
+      top: 0;
+    }
 
-      }
-      .img3{
-        display:flex;
-        flex-wrap: wrap;
-        padding-right:400px;
-        gap: 50px;
+    .logo {
+      height: 60px;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+
+    nav p {
+      cursor: pointer;
+      font-size: 18px;
+    }
+
+    .btn-primary {
+      background-color: rgb(10, 73, 10);
+      color: #fff;
+      padding: 12px 20px;
+      border-radius: 8px;
+      font-weight: 600;
+    }
+
+    /* === HERO SECTION === */
+    .hero {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      background-color: #e3e6e6;
+      padding: 120px 10%;
+      gap: 40px;
+    }
+    .dash1{
+      width:600px;
+    }
+
+    .hero-text {
+      max-width: 500px;
+    }
+
+    .hero-title {
+      font-size: 48px;
+      font-weight: 800;
+      margin-bottom: 20px;
+    }
+
+    .hero-text p {
+      margin-bottom: 10px;
+    }
+
+    .btn-secondary {
+      background-color: transparent;
+      border: 2px solid rgb(10, 73, 10);
+      color: rgb(10, 73, 10);
+      padding: 12px 20px;
+      border-radius: 8px;
+      margin-left: 10px;
+      font-weight: 600;
+    }
+
+    /* === HOW IT WORKS === */
+    .section-title {
+      text-align: center;
+      font-size: 42px;
+      font-weight: 700;
+      margin-top: 80px;
+    }
+
+    .hiw-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      margin: 40px 10%;
+    }
+
+    .hiw-step {
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: 20px;
+      text-align: center;
+      width: 300px;
+    }
+
+    .step-number {
+      background-color: #000;
+      color: #fff;
+      border-radius: 50%;
+      width: 30px;
+      height: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto 10px;
+    }
+
+    .step-title {
+      font-weight: 600;
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    /* === DIFFERENCE SECTION === */
+    .callout {
+      text-align: center;
+      color: brown;
+      font-size: 30px;
+      font-weight: 800;
+      margin-top: 60px;
+    }
+
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 40px;
+      margin: 40px 10%;
+    }
+
+    .features div {
+      text-align: center;
+      max-width: 400px;
+    }
+
+    .features p {
+      font-size: 22px;
+      font-weight: 700;
+      margin-top: 10px;
+    }
+
+    .btn-wide {
+      display: block;
+      margin: 30px auto;
+      background-color: rgb(10, 73, 10);
+      color: white;
+      padding: 15px 30px;
+      border-radius: 8px;
+      font-size: 18px;
+    }
+
+    /* === EMAIL MARKETING SECTION === */
+    .email-section {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      background-color: #1b1812;
+      color: white;
+      padding: 60px 10%;
+      gap: 40px;
+    }
+
+    .email1{
+      width:400px;
+    }
+
+    .email-text {
+      max-width: 400px;
+    }
+
+    .email-text h2 {
+      font-size: 36px;
+      margin-bottom: 15px;
+    }
+
+    .email-buttons button {
+      margin-right: 10px;
+      padding: 12px 20px;
+      border-radius: 8px;
+    }
+
+    .email-buttons .learn-more {
+      background-color: rgb(19, 21, 138);
+      color: #fff;
+    }
+
+    .email-buttons .signup {
+      background-color: #fff;
+      color: rgb(10, 73, 10);
+    }
+
+    /* === FOOTER === */
+    footer {
+      background-color: rgb(10, 73, 10);
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    /* === RESPONSIVE === */
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        gap: 10px;
+        padding: 15px 20px;
       }
 
-      .img5{
-        width:100%;
-        height:600px;
-        object-fit: cover;
-      }
-      .hero-text{
-        margin-left: 30px;
-        width:500px;
-      }
-      .s1{
-        padding:20px;
-        background-color: rgb(10, 73, 10);
-        color:white;
-        border-radius:10px;
-
-      }
-      .s2{
-        padding:20px;
-        border-radius:10px;
-        border:none;
-        margin-left:10px;
-
-      }
-      .c1{
-        padding:20px;
-        border-radius:10px;
-        margin:auto;
-        background-color: rgb(10, 73, 10);
-        color:white;
-
-      }
-      .hero1{
-        font-size:50px;
-        font-weight: 800;
-      }
-      .hero-text{
-        margin-top: 60px;
-
-      }
-      .hiw1{
+      .hero {
+        flex-direction: column;
         text-align: center;
-        padding-top: 20px;
-        font-weight: 700;
-        font-size:50px;
-      }
-      .hiw2{
-        display:flex;
-        flex-direction: row;
-        flex-wrap:wrap;
-        gap:40px;
-        padding-left:10px;
-        padding-right:10px;
-        justify-content: center;
-       
-        
-
-        
-        
-        
-      }
-      .hiw3{
-        border: solid;
-        padding: 10px;
-        text-align: center;
-        border-radius:10px;
-        align-content: center;
-        width:300px;
-        
-        
-        
-      }
-      .hiw4{
-        font-size:20px;
-        font-weight: 600;
-
-
-        
-      }
-      .callout{
-        text-align: center;
-        padding-top: 30px;
-        color: brown;
-        font-size:30px;
-        font-weight:800;
-
-      }
-      .nom1{
-        background-color: black;
-        color: white;
-        border-radius: 180px;
-        padding:4px;
-        width:30px;
-        height:30px;
-        align-content: center;
-        margin: auto;
-
-        
-        
-
-      }
-      .dif1{
-        display:flex;
-        flex-direction: row;   
-        flex-wrap: wrap;
-        gap:10px;
-        justify-content: center;
-        
-        
-
-      }
-      .difimg1{
-        width:400px;
-        height:400px;
-      }
-       .difimg2{
-        width:400px;
-        height:400px;
-        object-fit: cover;
-      }
-      .difp1{
-        font-size: 30px;
-        font-weight:700;
-      }
-      .difp2{
-        font-size: 30px;
-        font-weight:700;
-      }
-      .b1{
-        display:block;
-        margin: auto;
-        padding: 20px;
-        background-color:rgb(10, 73, 10);
-        color:white;
-        font-size:18px;
-
-      }
-      .de1{
-        margin-top:15px;
-        display:flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        background-color: rgb(27, 24, 18);
-        color: white;
-        justify-content: center;
-        align-items: center;
-        padding:40px;
-        
-        
-      }
-      .de22{
-        width:400px;
-        height:400px;
-      
-      }
-      .de23{
-        width:400px;
+        padding: 100px 20px;
       }
 
-      .de24{
-        font-size:40px;
-      }
-      .foot{
-        display:flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        background-color: rgb(10, 73, 10);
-        color: white;
+      .hero img {
+        position: static;
       }
 
-      .de25{
-        padding:15px;
-        cursor: pointer;
-        
+      .hiw-container, .features {
+        margin: 40px 5%;
       }
-      .de25:hover{
-        padding:15px;
-        cursor: pointer;
-        background-color: rgb(19, 21, 138);
-        color: white;
-        transition: 0.8s;
-        
-      }
-     
-      .de26{
-        padding:15px;
-        cursor: pointer;
-      }
-      
-      
-    </style>
+    }
+  </style>
+</head>
 
+<body>
 
-  </head>
-  <body>
-    
-    <header class="head1">
-      <div class="headie"><img src="https://www.selstack.com/logo_dark.png" alt="logo" class="img1"></div>
-      <div class="menu">
-        <p> How it works</p>
-       <p> pricing</p>
-       <p> Contact Sales</p>
-       <p> Log in</p>
-       <button class="c1"> Signup</button>
-     </div>
-    </header>
-    
-    
-    <div class="hero">
-      <div class="hero-text">
-        <p class="hero1"> Build. Sell. Grow.</p>
-        <p class="w1"> Selstack gives you everything you need to sell digital products and services online, beautifully, efficiently, and in total control.</p>
-        
-        <p class="w2">✓ 14-day free trial, no credit card required</p>
-        <p class="w2">✓ Trusted by over 20,000 Businesses</p>
-</p>
-        <p class="w2">✓ Send automated emails to leads</p>
-        <p class="w2">✓ Manage your leads using our In-built CRM</p>
-        <button class="s1">
-        Start Your 14-Day Trial
-        </button>
-        <button class="s2">
-        contact sales
-        </button>
-        <img src="https://www.danieliloh.com/wp-content/uploads/2025/10/heroimage1-scaled.png" class="img3o">
-        
-        
-        
+  <!-- Header -->
+  <header>
+    <img src="https://www.selstack.com/logo_dark.png" alt="Selstack Logo" class="logo" />
+    <nav>
+      <p>How it works</p>
+      <p>Pricing</p>
+      <p>Contact Sales</p>
+      <p>Log in</p>
+      <button class="btn-primary">Sign Up</button>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1 class="hero-title">Build. Sell. Grow.</h1>
+      <p>Selstack gives you everything you need to sell digital products and services online, beautifully, efficiently, and in total control.</p>
+      <p>✓ 14-day free trial, no credit card required</p>
+      <p>✓ Trusted by over 20,000 Businesses</p>
+      <p>✓ Send automated emails to leads</p>
+      <p>✓ Manage your leads using our In-built CRM</p>
+      <button class="btn-primary">Start Your 14-Day Trial</button>
+      <button class="btn-secondary">Contact Sales</button>
     </div>
 
-      </div>
-      
+    <img class="dash1" src="https://www.danieliloh.com/wp-content/uploads/2025/10/heroimage1-scaled.png" alt="Selstack dashboard preview">
+  </section>
+
+  <!-- How It Works -->
+  <h2 class="section-title">How Selstack Works</h2>
+  <div class="hiw-container">
+    <div class="hiw-step">
+      <div class="step-number">1</div>
+      <p class="step-title">Create a Free Account</p>
+      <p>Sign up with just an email address and password.</p>
+    </div>
+
+    <div class="hiw-step">
+      <div class="step-number">2</div>
+      <p class="step-title">Set Up Your Business Page</p>
+      <p>Create a beautiful, high-converting business profile page online.</p>
+    </div>
+
+    <div class="hiw-step">
+      <div class="step-number">3</div>
+      <p class="step-title">Add Products & Services</p>
+      <p>Upload as many products as you like and start receiving payments instantly.</p>
+    </div>
+  </div>
+
+  <!-- The Selstack Difference -->
+  <p class="callout">The Selstack Difference</p>
+  <div class="features">
     <div>
-      <p class="hiw1">How Selstack Works</p> 
+      <img src="https://www.rapidformationsblog.co.uk/wp-content/uploads/2024/07/Shutterstock_2475484855-750x750.jpg" alt="Entrepreneur selling online" />
+      <p>All tools you need to sell</p>
     </div>
+
     <div>
-    <div class="hiw2">
-      <div class="hiw3">
-        <p class="nom1">1</p>
-        <p class="hiw4">Create a free account</p>
-        <p>Sign up with just an email address and password</p>
+      <img src="https://media.istockphoto.com/id/1281476617/photo/mature-man-running-online-store.jpg?s=612x612&w=0&k=20&c=TnGnw59DaBgJrrswbUb_uf54UHpT6N9waOC4gQzJ2N8=" alt="Online business owner" />
+      <p>Sell across 100+ Countries</p>
+    </div>
+  </div>
+  <button class="btn-wide">See all features in action</button>
 
-      </div>
-      <div class="hiw3">
-        <p class="nom1">2</p>
-        <p class="hiw4">Setup your Business page</p>
-        <p>Put your creativity to work by setting up a high converting Business profile page online</p>
-
-      </div>
-      <div class="hiw3">
-        <p class="nom1">3</p>
-        <p class="hiw4">Add your products and services</p>
-        <p>The fun part! Upload as many products and services as you like. Share the link to your store or product and start receiving payments</p>
-
+  <!-- Email Marketing Section -->
+  <section class="email-section">
+    <img class="email1" src="https://www.selstack.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Forganisation.dce92f6a.png&w=3840&q=75" alt="Email marketing illustration" />
+    <div class="email-text">
+      <h2>Intuitive Email Marketing for Marketers</h2>
+      <p>Build meaningful connections with easy-to-use email marketing tools that streamline everything from design to send.</p>
+      <div class="email-buttons">
+        <button class="learn-more">Learn More</button>
+        <button class="signup">Sign Up Now</button>
       </div>
     </div>
-    <div>
-      <p class="callout">The Selstack Difference</p>
-    </div>
-    <div class="dif1">
-      <div>
-        <img class="difimg1"src="https://www.rapidformationsblog.co.uk/wp-content/uploads/2024/07/Shutterstock_2475484855-750x750.jpg" alt="business owner selling online">
-        <p class="difp1"> All tools you need to sell</p>
+  </section>
 
-      </div>
-       <div>
-        <img class="difimg2" src="https://media.istockphoto.com/id/1281476617/photo/mature-man-running-online-store.jpg?s=612x612&w=0&k=20&c=TnGnw59DaBgJrrswbUb_uf54UHpT6N9waOC4gQzJ2N8=" alt="business owner selling online 2">
-        <p class="difp2"> Sell across 100+ Countries</p>
+  <!-- Footer -->
+  <footer>
+    <p>Customer care: <a href="mailto:hello@selstack.com">hello@selstack.com</a></p>
+  </footer>
 
-      </div>
-      
-    </div>
-    <button class="b1"> See all features in action</button>
-    <div class="de1">
-      <div>
-        <img class="de22"src="https://www.selstack.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Forganisation.dce92f6a.png&w=3840&q=75" alt="test">
-
-      </div>
-      <div class="de23">
-        <p class="de24">Intuitive email marketing campaigns for marketers</p>
-        <p>Build meaningful connections with easy-to-use email marketing tools that streamline everything from design to send.</p>
-        <button class="de25"> Learn more</button>
-        <button class="de26"> Signup now</button>
-      </div>
-
-    </div>
-    <footer class="foot">
-      <div>
-        <p>Customer care: hello@selstack.com</p>
-        <p></p>
-        <p></p>
-      </div>
-    </footer>
-    
-      
-    
-  
-  
-
-    
-   
-  
-
-    
-
-  </body>
+</body>
 </html>
+
